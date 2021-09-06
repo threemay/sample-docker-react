@@ -15,10 +15,10 @@ deploy:
   region: "us-east-1" ### AWS region of your choice
   app: "sample-docker-react" ### Your EB App name
   env: "Sampledockerreact-env" ### Your EB App environment name
-  bucket_name: "elasticbeanstalk-us-east-1-780390497435" ### S3 bucket name
+  bucket_name: "elasticbeanstalk-us-east-1-092354816535" ### S3 bucket name
   bucket_path: "EBApptest" ### S3 folder name under S3 bucket above
   on:
     branch: main
-  access_key_id: "$AWS_ACCESS_KEY"
-  secret_access_key: "$AWS_SECRET_KEY"
+  access_key_id: "AKIARLAGGVIL67UXZ5VS"
+  secret_access_key: "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"
 
