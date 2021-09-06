@@ -8,7 +8,8 @@ services:
 before_install: 
     - docker build -t yuwangjr/sample-app -f Dockerfile.dev .
 script:     
-    - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
+    ### - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
+    - docker run -p 80:80 yuwangjr/sample-app
     
 deploy:
   provider: elasticbeanstalk
