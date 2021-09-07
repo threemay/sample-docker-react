@@ -17,7 +17,7 @@ deploy:
   provider: elasticbeanstalk
   region: "us-east-1" ### AWS region of your choice
   app: "sample-docker-react" ### Your EB App name
-  env: "Sampledockerreact-env" ### Your EB App environment name
+  env: "Sampledockerreact-env-1" ### Your EB App environment name
   bucket_name: "elasticbeanstalk-us-east-1-092354816535" ### S3 bucket name
   bucket_path: "EBApptest" ### S3 folder name under S3 bucket above
   on:
