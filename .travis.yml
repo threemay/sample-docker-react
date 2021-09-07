@@ -9,7 +9,8 @@ before_install:
     - docker build -t yuwangjr/sample-app -f Dockerfile.dev .
 script:     
     ### - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
-    - docker run -p 80:80 yuwangjr/sample-app
+    ### - docker run -p 80:80 yuwangjr/sample-app
+    - docker run yuwangjr/sample-app
     
 deploy:
   provider: elasticbeanstalk
@@ -20,6 +21,6 @@ deploy:
   bucket_path: "EBApptest" ### S3 folder name under S3 bucket above
   on:
     branch: main
-  access_key_id: "AKIARLAGGVIL67UXZ5VS"
-  secret_access_key: "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"
+  access_key_id: "$AWS_ACCESS_KEY"
+  secret_access_key: "$AWS_SECRET_KEY"
 
