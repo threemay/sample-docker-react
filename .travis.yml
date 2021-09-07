@@ -11,8 +11,8 @@ before_install:
 script:     
     ### - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
     ### - docker run -p 80:80 yuwangjr/sample-app
-    - docker run sample-app
-    
+    - docker run -p 80:80 sample-app 
+
 deploy:
   provider: elasticbeanstalk
   region: "us-east-1" ### AWS region of your choice
