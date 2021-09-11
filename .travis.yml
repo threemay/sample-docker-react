@@ -24,3 +24,5 @@ deploy:
   bucket_path: "EBApptest" 
   on:
     branch: main
+  skip_cleanup: true
+  
