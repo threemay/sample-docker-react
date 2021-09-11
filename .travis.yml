@@ -6,9 +6,6 @@ node_js:
 services: 
     - docker
 
-after_deploy:
-  - echo "done deploying"
-
 deploy:
   - provider: elasticbeanstalk
     region: us-east-1
