@@ -1,7 +1,7 @@
 FROM node:latest AS builder
 # Above, we set the base image for this first stage as a light weigh node
 
-WORKDIR './app'
+WORKDIR '/app'
 # Above we set the build environment as a folder called /app in the docker container to prevent clashes
 
 COPY package*.json ./
