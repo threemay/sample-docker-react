@@ -13,9 +13,8 @@ after_deploy:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
-  secret_access_key:
-    secure: "$SECRETACCESSKEY"
+  access_key_id: "$ACCESSKEYID"
+  secret_access_key: "$SECRETACCESSKEY1"
   region: "us-east-1"  
   app: "sample-docker-react"
   env: "Sampledockerreact-env"
