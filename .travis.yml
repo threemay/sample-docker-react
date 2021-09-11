@@ -2,16 +2,6 @@ sudo: required
 language: node_js
 node_js:
     - "stable"
-    
-services: 
-    - docker
-before_install: 
-    ###- docker build -t yuwangjr/sample-app -f Dockerfile.dev .
-    - docker build -t sample-app .
-script:     
-    ### - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
-    ### - docker run -p 80:80 yuwangjr/sample-app
-    - docker run -p 80:80 sample-app 
 
 deploy:
   provider: elasticbeanstalk
@@ -24,4 +14,16 @@ deploy:
     branch: main
   access_key_id: "$AWS_ACCESS_KEY"
   secret_access_key: "$AWS_SECRET_KEY1"
+    
+services: 
+    - docker
+before_install: 
+    ###- docker build -t yuwangjr/sample-app -f Dockerfile.dev .
+    - docker build -t sample-app .
+script:     
+    ### - docker run -e CI=true yuwangjr/sample-app npm run test -- --coverage --watchAll=false.
+    ### - docker run -p 80:80 yuwangjr/sample-app
+    - docker run -p 80:80 sample-app 
+
+
 
