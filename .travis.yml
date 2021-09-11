@@ -20,5 +20,6 @@ deploy:
   app: "sample-docker-react"
   env: "Sampledockerreact-env"
   bucket_name: "elasticbeanstalk-us-east-1-092354816535"
+  bucket_path: "EBApptest" 
   on:
     branch: main
