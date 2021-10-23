@@ -11,7 +11,7 @@ git fetch origin main
 
 
 git checkout main
-git log 
+git rev-parse main
 git checkout test
 # OUT=$(git rev-parse $1)
 # git checkout $2
