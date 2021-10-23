@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # the first parameter should be the master branch name
 # the first parameter should be the feature branch name
@@ -8,9 +8,9 @@
 # if no contain, exit with 1 code
 
 
-git checkout $1
-OUT=$(git rev-parse HEAD)
-git checkout $2
+# git checkout $1
+OUT=$(git rev-parse $1)
+# git checkout $2
 # git log | grep -q ${OUT}
 
 
