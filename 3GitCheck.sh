@@ -8,7 +8,7 @@
 # if no contain, exit with 1 code
 
 git branch
-# git checkout $1
+git checkout main
 # OUT=$(git rev-parse $1)
 # git checkout $2
 # git log | grep -q ${OUT}
