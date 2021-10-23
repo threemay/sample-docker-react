@@ -19,12 +19,13 @@ jobs:
       matrix:
         # node-version: [12.x, 14.x, 16.x] 
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-        node-version: [14.x]1
+        node-version: [14.x]
+
 
     steps:
-    - name: --- checkout repo ---
+    - name: --- checkout repo --- 
       uses: actions/checkout@v2
-    - run: git remote -v && git branch && ls 1>&2
+    - run: bash 3GitCheck.sh main test
     # - name: --- install Node.js ${{ matrix.node-version }} ---
     #   uses: actions/setup-node@v2
     #   with:
