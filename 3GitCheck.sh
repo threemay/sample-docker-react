@@ -1,4 +1,6 @@
+
 #!/bin/bash
+
 
 # the first parameter should be the master branch name
 # the first parameter should be the feature branch name
@@ -11,6 +13,7 @@
 # git checkout $1
 OUT=$(git rev-parse $1)
 # git checkout $2
+
 # git log | grep -q ${OUT}
 
 
