@@ -7,13 +7,13 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-
-git checkout $1
+git branch
+# git checkout $1
 # OUT=$(git rev-parse $1)
 # git checkout $2
 # git log | grep -q ${OUT}
 
-git log $1
+# git log $1
 
 # if [[ $(git log $2) =~ "${OUT}" ]]
 # then
