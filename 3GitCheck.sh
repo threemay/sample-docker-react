@@ -35,12 +35,14 @@ if [[ $(git log) =~ "${OUT}" ]]
 then/ma
 =======
 
-# git checkout $1
-OUT=$(git rev-parse $1)
+git checkout $1
+# OUT=$(git rev-parse $1)
 # git checkout $2
 # git log | grep -q ${OUT}
 
+git log $1
 
+<<<<<<< HEAD
 if [[ $(git log $2) =~ "${OUT}" ]]
 then
 >>>>>>> 1
@@ -50,4 +52,14 @@ else
     echo "no"
     exit 1
 fi
+=======
+# if [[ $(git log $2) =~ "${OUT}" ]]
+# then
+#     echo "OK"
+#     exit 0
+# else
+#     echo "no"
+#     exit 1
+# fi
+>>>>>>> 1
 
