@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/bash
 
 # the first parameter should be the master branch name
 # the first parameter should be the feature branch name
