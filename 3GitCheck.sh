@@ -9,7 +9,7 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git fetch remote main 
+git fetch origin main 
 
 
 git checkout main
