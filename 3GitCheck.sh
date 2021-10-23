@@ -27,7 +27,7 @@ else
     echo "no files found"
 fi
 
-git log | grep 2e8
+git log | head -n 1
 
 # git log | grep -q ${OUT}
 
