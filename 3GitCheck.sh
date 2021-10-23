@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 
 #!/bin/bash
 
+=======
+#!/usr/bin/env sh
+>>>>>>> 1
 
 # the first parameter should be the master branch name
 # the first parameter should be the feature branch name
@@ -9,6 +13,7 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
+<<<<<<< HEAD
 git fetch origin $1 
 
 
@@ -24,6 +29,17 @@ OUT=$(git rev-parse $1)
 
 if [[ $(git log) =~ "${OUT}" ]]
 then/ma
+=======
+
+git checkout $1
+OUT=$(git rev-parse HEAD)
+git checkout $2
+# git log | grep -q ${OUT}
+
+
+if [[ $(git log $2) =~ "${OUT}" ]]
+then
+>>>>>>> 1
     echo "OK"
     exit 0
 else
