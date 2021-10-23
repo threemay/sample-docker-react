@@ -7,10 +7,10 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git pull origin main
+git fetch remote main 
 
 
-git branch
+git checkout main
 # OUT=$(git rev-parse $1)
 # git checkout $2
 # git log | grep -q ${OUT}
