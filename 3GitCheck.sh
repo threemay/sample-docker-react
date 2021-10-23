@@ -19,6 +19,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 git fetch origin $1 
 
 
@@ -45,6 +46,10 @@ git branch
 =======
 git checkout main
 >>>>>>> 1
+=======
+git fetch origin main
+git log main
+>>>>>>> 1
 # OUT=$(git rev-parse $1)
 # git checkout $2
 # git log | grep -q ${OUT}
@@ -63,7 +68,7 @@ else
 fi
 =======
 # if [[ $(git log $2) =~ "${OUT}" ]]
-# then
+# then/ma
 #     echo "OK"
 #     exit 0
 # else
