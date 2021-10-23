@@ -12,18 +12,18 @@
 git fetch origin $1 
 
 
-# git checkout $1 
-# git rev-parse main
+git checkout $1
 git checkout $2
+
 OUT=$(git rev-parse $1)
-# git checkout $2
+echo ${OUT}
 
 # git log | grep -q ${OUT}
 
 # git log $1
 
 if [[ $(git log) =~ "${OUT}" ]]
-then/ma
+then
     echo "OK"
     exit 0
 else
