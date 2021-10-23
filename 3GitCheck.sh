@@ -13,6 +13,7 @@ git fetch origin main
 
 
 git checkout main
+git log 
 # OUT=$(git rev-parse $1)
 # git checkout $2
 
