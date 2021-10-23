@@ -1,9 +1,13 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 #!/bin/bash
 
 =======
 #!/usr/bin/env sh
+>>>>>>> 1
+=======
+#!/bin/bash
 >>>>>>> 1
 
 # the first parameter should be the master branch name
@@ -31,9 +35,9 @@ if [[ $(git log) =~ "${OUT}" ]]
 then/ma
 =======
 
-git checkout $1
-OUT=$(git rev-parse HEAD)
-git checkout $2
+# git checkout $1
+OUT=$(git rev-parse $1)
+# git checkout $2
 # git log | grep -q ${OUT}
 
 
