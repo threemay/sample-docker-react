@@ -20,19 +20,19 @@ git checkout $2
 OUT=$(git rev-parse $1)
 echo ${OUT}
 
-git log | grep 2e8
+git log | head -n 1
 
 # git log | grep -q ${OUT}
 
 # git log $1
 
-if [[ $(git log) =~ "${OUT}" ]]
-then
-    echo "OK"
-    exit 0
-else
-    echo "no"
-    exit 1
-fi
+# if [[ $(git log) =~ "${OUT}" ]]
+# then
+#     echo "OK"
+#     exit 0
+# else
+#     echo "no"
+#     exit 1
+# fi
 
 
