@@ -7,20 +7,6 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-
-git checkout $1
-# OUT=$(git rev-parse $1)
-# git checkout $2
-# git log | grep -q ${OUT}
-
-git log $1
-
-# if [[ $(git log $2) =~ "${OUT}" ]]
-# then
-#     echo "OK"
-#     exit 0
-# else
-#     echo "no"
-#     exit 1
-# fi
-
+git add .
+git commit -m "1"
+git push origin test
