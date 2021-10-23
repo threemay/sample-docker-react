@@ -7,24 +7,24 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git fetch origin main 
+git fetch origin $1 
 
 
-# git checkout main
-# git rev-parse main
-# git checkout test
-OUT=$(git rev-parse $1)
+git checkout $1
+git rev-parse $1
 git checkout $2
-git log | grep -q ${OUT}
+# OUT=$(git rev-parse $1)
+# git checkout $2
+# git log | grep -q ${OUT}
 
-git log $1
+# git log $1
 
-if [[ $(git log $2) =~ "${OUT}" ]]
-then/ma
-    echo "OK"
-    exit 0
-else
-    echo "no"
-    exit 1
-fi
+# if [[ $(git log $2) =~ "${OUT}" ]]
+# then/ma
+#     echo "OK"
+#     exit 0
+# else
+#     echo "no"
+#     exit 1
+# fi
 
