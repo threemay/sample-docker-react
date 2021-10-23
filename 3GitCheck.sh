@@ -20,6 +20,8 @@ git checkout $2
 OUT=$(git rev-parse $1)
 echo ${OUT}
 
+git log | grep 2e8
+
 # git log | grep -q ${OUT}
 
 # git log $1
