@@ -7,8 +7,8 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git fetch origin main
-git log FETCH_HEAD --not master
+git pull origin main
+
 
 git branch
 # OUT=$(git rev-parse $1)
