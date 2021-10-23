@@ -39,7 +39,11 @@ then/ma
 git checkout $1
 =======
 git branch
+<<<<<<< HEAD
 # git checkout $1
+>>>>>>> 1
+=======
+git checkout main
 >>>>>>> 1
 # OUT=$(git rev-parse $1)
 # git checkout $2
