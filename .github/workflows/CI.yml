@@ -25,7 +25,7 @@ jobs:
     steps:
     - name: --- checkout repo --- 
       uses: actions/checkout@v2
-    - run: git remote -v && git branch && ls 1>&2
+    - run: sh 3test.sh master test
     # - name: --- install Node.js ${{ matrix.node-version }} ---
     #   uses: actions/setup-node@v2
     #   with:
