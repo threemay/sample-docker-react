@@ -48,7 +48,12 @@ git checkout main
 >>>>>>> 1
 =======
 git fetch origin main
+<<<<<<< HEAD
 git log main
+>>>>>>> 1
+=======
+
+git branch
 >>>>>>> 1
 # OUT=$(git rev-parse $1)
 # git checkout $2
