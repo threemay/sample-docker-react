@@ -12,7 +12,7 @@
 # if no contain, exit with 1 code
 
 git fetch origin $1 
-
+git fetch origin $2 
 
 git checkout $1
 git checkout $2
