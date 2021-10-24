@@ -23,7 +23,7 @@ git fetch my $2
 # OUT=$(git rev-parse $1)
 # echo ${OUT}
 # git remote -v
-git log my/$2
+git log $2
 # git log my/$2..origin/$1
 # git log origin/$1..origin/$2
 # if [[ $(git log $2..$1) ]] 
