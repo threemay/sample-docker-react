@@ -30,7 +30,6 @@ fi
 
 # git log $2
 
-# git log $1
 
 # if [[ $(git log) =~ "${OUT}" ]]
 # then
