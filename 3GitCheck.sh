@@ -20,12 +20,14 @@ git checkout $2
 # OUT=$(git rev-parse $1)
 # echo ${OUT}
 
-if [[ $(git log $2..$1) ]] 
-then
-    echo "there are files"
-else
-    echo "no files found"
-fi
+git log origin/$2..origin/$1
+
+# if [[ $(git log $2..$1) ]] 
+# then
+#     echo "there are files"
+# else
+#     echo "no files found"
+# fi
 
 
 # git log $2
