@@ -21,7 +21,7 @@ git checkout $2
 # echo ${OUT}
 # git remote -v
 # git log origin/$2..origin/$1
-git log origin/$1..origin/$2
+# git log origin/$1..origin/$2
 # if [[ $(git log $2..$1) ]] 
 # then
 #     echo "there are files"
@@ -30,7 +30,7 @@ git log origin/$1..origin/$2
 # fi
 
 
-# git log $2
+git log origin/$2
 
 
 # if [[ $(git log) =~ "${OUT}" ]]
