@@ -15,7 +15,7 @@ git fetch origin $1
 
 
 git checkout $1
-git checkout $2
+git checkout $2 
 
 OUT=$(git rev-parse $1)
 echo ${OUT}
