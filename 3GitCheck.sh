@@ -27,7 +27,6 @@ else
     echo "no files found"
 fi
 
-git log | head -n 1
 
 git log $2
 
