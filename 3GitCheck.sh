@@ -19,8 +19,8 @@ git checkout $2
 
 # OUT=$(git rev-parse $1)
 # echo ${OUT}
-
-git log origin/$2..origin/$1
+git remote -v
+# git log origin/$2..origin/$1
 
 # if [[ $(git log $2..$1) ]] 
 # then
