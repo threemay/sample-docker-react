@@ -29,7 +29,7 @@ fi
 
 git log | head -n 1
 
-# git log $2 | grep ${OUT}
+git log $2 | grep ${OUT}
 
 # git log $1
 
