@@ -11,11 +11,13 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git fetch origin $1 
-git pull origin $2 
+git config --get remote.origin.url
 
-git checkout $1
-git checkout $2 
+# git fetch origin $1 
+# git pull origin $2 
+
+# git checkout $1
+# git checkout $2 
 
 # OUT=$(git rev-parse $1)
 # echo ${OUT}
@@ -30,7 +32,7 @@ git checkout $2
 # fi
 
 
-git log origin/$2
+# git log origin/$2
 
 
 # if [[ $(git log) =~ "${OUT}" ]]
