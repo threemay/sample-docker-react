@@ -28,7 +28,7 @@ else
 fi
 
 
-git log $2
+git log $1
 
 # git log $1
 
