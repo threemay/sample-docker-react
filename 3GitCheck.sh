@@ -11,8 +11,8 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git fetch origin $1 
-git fetch origin $2 
+# git fetch origin $1 
+# git fetch origin $2 
 
 git checkout $1
 git checkout $2 
@@ -28,7 +28,7 @@ else
 fi
 
 
-git log $1
+git log $2
 
 # git log $1
 
