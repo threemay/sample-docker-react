@@ -20,7 +20,6 @@ git checkout $2
 OUT=$(git rev-parse $1)
 echo ${OUT}
 
-git log | head -n 1
 
 git log $2
 
