@@ -11,10 +11,11 @@
 # in feature branch 
 # if no contain, exit with 1 code
 
-git config --get remote.origin.url
+remoteURL =$(git config --get remote.origin.url)
+git remote add my ${remoteURL}
 
-# git fetch origin $1 
-# git pull origin $2 
+git fetch origin $1 
+git fetch my $2 
 
 # git checkout $1
 # git checkout $2 
@@ -22,7 +23,7 @@ git config --get remote.origin.url
 # OUT=$(git rev-parse $1)
 # echo ${OUT}
 # git remote -v
-# git log origin/$2..origin/$1
+git log my/$2..origin/$1
 # git log origin/$1..origin/$2
 # if [[ $(git log $2..$1) ]] 
 # then
