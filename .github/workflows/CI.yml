@@ -25,7 +25,7 @@ jobs:
     steps:
     - name: --- checkout repo --- 
       uses: actions/checkout@v2
-      run: bash 3GitCheck.sh main test
+    - run: bash 3GitCheck.sh main test
     # - run: git log | grep 2e8
 
 
